@@ -1,0 +1,1 @@
+//Right here we'll write the necesary code to configure the view of the app
