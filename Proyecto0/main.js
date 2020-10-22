@@ -12,3 +12,5 @@ function createMainWindow(){
 
     mainWindow.loadFile('index.html')
 }
+
+app.whenReady().then(createMainWindow)
