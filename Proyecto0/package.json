@@ -1,0 +1,25 @@
+{
+  "name": "proyecto0",
+  "version": "1.0.0",
+  "description": "Basic application multiplatform multiplatform",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ezzeguason/electronYT.git"
+  },
+  "keywords": [
+    "Electron",
+    "Chromium",
+    "Node.js",
+    "Desktop",
+    "Multiplatform"
+  ],
+  "author": "Ezze Juarez",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^10.1.4"
+  }
+}
