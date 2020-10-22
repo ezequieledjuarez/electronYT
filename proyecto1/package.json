@@ -2,13 +2,13 @@
   "name": "bookmarks",
   "version": "1.0.0",
   "description": "App to bookmark management",
-  "main": "\u001b[D\u001b[D\u001b[D\u001bmain\u001b[C\u001b[3\u001b[C\u001b[C\u001b[C\u001b.js)",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start" : "electron ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ezzeguason/electronYT.git"
+    "url": "https://github.com/ezzeguason/electronYT.git"
   },
   "keywords": [
     "Electron",
