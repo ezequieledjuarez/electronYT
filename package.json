@@ -1,0 +1,31 @@
+{
+  "name": "bookmarks",
+  "version": "1.0.0",
+  "description": "App to bookmark management",
+  "main": "\u001b[D\u001b[D\u001b[D\u001bmain\u001b[C\u001b[3\u001b[C\u001b[C\u001b[C\u001b.js)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezzeguason/electronYT.git"
+  },
+  "keywords": [
+    "Electron",
+    "Chromium",
+    "Node.js",
+    "Desktop",
+    "Multiplatform",
+    "Bookmark",
+    "Management"
+  ],
+  "author": "Ezze Juarez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ezzeguason/electronYT/issues"
+  },
+  "homepage": "https://github.com/ezzeguason/electronYT#readme",
+  "devDependencies": {
+    "electron": "^10.1.4"
+  }
+}

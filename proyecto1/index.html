@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv= "Content-Security-Policy" content="default-src 'self'; script-src 'self'"> 
+    <meta http-equiv= "X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Bookmarks</title>
+</head>
+<body>
+    <h1>Bookmarks</h1>
+
+    <div class="mensaje-error">
+
+    </div>
+
+    <section class="create-bookmark">
+        <form action="" class="create-form-bookmark">
+
+            <input type="url" class="create-bookmark-url" placeholder="URL" required>
+            <input type="submit" value="Create" class="create-button-bookmark" disabled>
+
+        </form>
+    </section>
+
+    <section class="bookmarks">
+
+    </section>
+
+    <section class="controls">
+        <button class="delete-bookmarks">
+            Delete Bookmarks
+        </button>
+    </section>
+
+    <script src="./renderer.js"></script>
+</body>
+</html>
