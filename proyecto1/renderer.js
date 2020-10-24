@@ -19,6 +19,8 @@ class Bookmarks{
                 this.bookmarkButton.disabled = !this.bookmarkUrl.validity.valid // true disabled, false enabled
             })
             this.bookmarkCreateForm.addEventListener('submit', this.createBookmark.bind(this))
+
+            this.bookmarksDelete.addEventListener('click', this.deleteCreatedBookmark.bind(this))
         }
         createBookmark(event){
             event.preventDefault()
@@ -81,6 +83,12 @@ class Bookmarks{
         setTimeout(()=>{
             this.msgError.innerText = null
         }, 5000)
+    }
+
+    deleteCreatedBookmark(){
+        localStorage.clear()
+
+        this.bookmarks.innerHTML = ''
     }
 }
 
