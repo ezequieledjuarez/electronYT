@@ -1,4 +1,4 @@
-
+const{shell} = require('electron')
 
 class Bookmarks{
     constructor(){
@@ -21,6 +21,8 @@ class Bookmarks{
             this.bookmarkCreateForm.addEventListener('submit', this.createBookmark.bind(this))
 
             this.bookmarksDelete.addEventListener('click', this.deleteCreatedBookmark.bind(this))
+
+            this.bookmarks.addEventListener('click', this.openLinkFromBookmark.bind(this))
         }
         createBookmark(event){
             event.preventDefault()
@@ -89,6 +91,13 @@ class Bookmarks{
         localStorage.clear()
 
         this.bookmarks.innerHTML = ''
+    }
+
+    openLinkFromBookmark(event){
+        if(event.target.href){ //if aim to link
+            event.preventDefault() //prevents open the link in the app
+            shell.openExternal(event.target.href)
+        }
     }
 }
 
