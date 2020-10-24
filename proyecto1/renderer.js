@@ -92,4 +92,5 @@ class Bookmarks{
     }
 }
 
-new Bookmarks()
+let bookmarks = new Bookmarks()
+bookmarks.viewBookmarks()
