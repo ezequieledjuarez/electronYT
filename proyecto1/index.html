@@ -6,21 +6,26 @@
     <meta http-equiv="Content-Security-Policy: default-src https:; script-src https: 'unsafe-inline'; style-src https: 'unsafe-inline'">
     <meta http-equiv="X-Content-Security-Policy: default-src https:; script-src https: 'unsafe-inline'; style-src https: 'unsafe-inline'">
     <title>Bookmarks</title>
-</head>
+    <link rel="stylesheet" href="./css/materializeAlert.css">
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head> 
 <body>
     <h1>Bookmarks</h1>
 
 
-    <div class="message-error">
-
+    <div class="materialert warning message-error hide ">
+        <div class="material-icons invisible"></div>
     </div>
 
     <section class="create-bookmark">
         <form class="create-form-bookmark">
 
             <input type="url" class="create-bookmark-url" placeholder="URL" required>
-            <input type="submit" value="Create" class="create-button-bookmark" disabled>
-
+            <button class="blue btn waves-effect waves-light create-button-bookmark" type="submit" name="action" disabled>Create
+                <i class="material-icons right"></i>
+              </button>
         </form>
     </section>
 
@@ -29,7 +34,7 @@
     </section>
 
     <section class="controls">
-        <button class="delete-bookmarks">
+        <button class="red waves-effect waves-light btn delete-bookmarks">
             Delete Bookmarks
         </button>
     </section>

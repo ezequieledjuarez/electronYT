@@ -62,13 +62,15 @@ class Bookmarks{
     }
 
     htmlBookmarkGenerator(bookmark){
-        return `<div class ="links"><h3>${bookmark.title}</h3>
-            <p>
+        return `<li class = "collection-item">
+                <h4>
+                ${bookmark.title} 
+                </h4>
+                <br> 
                 <a href="${bookmark.url}">
                 ${bookmark.url}
                 </a>
-            </p>
-        </div>`
+                </li>`
     }
 
     viewBookmarks(){
@@ -76,14 +78,16 @@ class Bookmarks{
 
         let html = bookmarks.map(this.htmlBookmarkGenerator).join('')
 
-        this.bookmarks.innerHTML = html
+        this.bookmarks.innerHTML = `<ul class = "collection">${html}<ul>`
     }
 
     reportError(error,url){
+        this.msgError.classList.remove('hide')
         this.msgError.innerHTML = `An error has ocurred ${url}: ${error}`
 
         setTimeout(()=>{
             this.msgError.innerText = null
+            this.msgError.classList.add('hide')
         }, 5000)
     }
 
