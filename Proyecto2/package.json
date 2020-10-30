@@ -1,0 +1,24 @@
+{
+  "name": "proyecto2",
+  "version": "1.0.0",
+  "description": "Manage people",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Manage",
+    "People",
+    "nedb",
+    "Electron",
+    "App",
+    "Desktop",
+    "Multiplatform"
+  ],
+  "author": "EzzeJuarez",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^10.1.5",
+    "nedb": "^1.8.0"
+  }
+}
