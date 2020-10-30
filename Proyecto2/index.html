@@ -20,7 +20,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-            <form class="border border-light p-5">
+            <form id = "newRegister" class="border border-light p-5">
 
                 <p class="h3 mb-4 text-left">Register</p>
                 
@@ -30,15 +30,15 @@
 
                 <input type="email" id="mail" class="form-control mb-4" placeholder="E-mail" required>
             
-                <button class="btn btn-info btn-block my-4" type="submit">Create</button>
+                <button id="btnCreate" class="btn btn-success btn-block my-4" type="submit">Create</button>
     
             </form>
         </div>
     </div>
-        <div class="row">
+        <div class="row" style="margin-top:30px">
             <div class="col">
                 <p class="h3 mb-4 text-center">Registers</p>
-            <table id="tablePreview" class="table">
+            <table class="table">
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -47,7 +47,7 @@
                         <th>Actions</th>
                     </tr>
                 </thead>
-                </tbody>
+                </tbody id = "register">
 
                 </tbody>
                
