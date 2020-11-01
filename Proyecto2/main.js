@@ -32,6 +32,12 @@ function createMainWindow(){
     let menu = Menu.buildFromTemplate(appMenu)
     
     mainWindow.setMenu(menu)
+
+    mainWindow.on(
+        'closed',()=>
+    {
+        mainWindow = null
+    })
 }
 
 function openWindowAbout(){
